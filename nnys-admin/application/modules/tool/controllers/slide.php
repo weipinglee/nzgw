@@ -26,7 +26,7 @@ class slideController extends Yaf\Controller_Abstract{
             $data['img']=\Library\tool::setImgApp($img);
             $data['status']=safe::filterPost('status','int');
             $data['order']=safe::filterPost('order','int');
-            $data['bgcolor']=safe::filterPost('bgcolor');
+            $data['link']=safe::filterPost('link');
             $slideModel=$this->slideModel;
             $res=$slideModel->addSlide($data);
             die(json::encode($res));
@@ -70,7 +70,7 @@ class slideController extends Yaf\Controller_Abstract{
             $img=safe::filterPost('imgfile2');
             $date['img']=\Library\tool::setImgApp($img);
             $date['status']=safe::filterPost('status','int');
-            $date['bgcolor']=safe::filterPost('bgcolor');
+            $date['link']=safe::filterPost('link');
             $res=$this->slideModel->editSlide($date);
             die(json::encode($res));
         }
@@ -102,7 +102,6 @@ class slideController extends Yaf\Controller_Abstract{
         }
     }
     public function uploadAction(){
-
             //调用文件上传类
             $uoload=new \Library\photoupload();
             $uoload->setThumbParams(array(180,180));

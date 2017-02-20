@@ -63,7 +63,7 @@
                         耐耐网后台管理系统
                     </a>
                 </li>
-                <li class="current"><a target="content"><img src="{views:img/icons/menu/layout.png}" alt="" />系统管理</a>
+                <!-- <li class="current"><a target="content"><img src="{views:img/icons/menu/layout.png}" alt="" />系统管理</a>
                     <ul>
                         <li class="current"><a target="content">权限管理</a>
                             <ul>
@@ -87,47 +87,36 @@
                                 <li><a href="{url:system/admin/logList}" target="content">管理员操作记录</a></li>
                             </ul>
                         </li>
-                        <!-- <li><a  target="content">系统设置</a></li> -->
+                         <li><a  target="content">系统设置</a></li>
 
                     </ul>
-                </li>
-                <li><a target="content"><img src="{views:img/icons/menu/brush.png}" alt="" />会员管理</a>
+                </li> -->
+                
+                <li><a   target="content"><img src="{views:img/icons/menu/comment.png}" alt="" />后台管理</a>
                     <ul>
-                        <!--
-                        <li><a href='' target="content">子账户权限管理</a>
+                        <li><a  target="content">报价管理</a>
                             <ul>
-                                <li><a href="{url:member/subRoleList}" target="content">角色列表</a></li>
-                                <li><a href="{url:member/roleAdd}" target="content">添加角色</a></li>
-                            </ul>
-                        </li>-->
-
-                        <li><a href="{url:member/usergroup/groupList}" target="content">会员等级</a></li>
-                        <li><a target="content">会员管理</a>
-                            <ul>
-                                <li><a href="{url:member/member/memberList}" target="content">会员列表</a></li>
-                                <li><a href="{url:member/member/OnLineList}" target="content">在线会员信息</a></li>
-                                <li><a href="{url:member/member/userlog}" target="content">会员日志列表</a></li>
-                                <li><a href="{url:member/member/userfund}" target="content">会员资金列表</a></li>
+                                <li><a target="content" href="{url:zxbj/zxbj/zxbjlist}">报价列表</a></li>
                             </ul>
                         </li>
-
-                        <li><a target="content">菜单管理</a>
-                         <ul>
-                                <li><a href="{url:member/Menu/MenuList}" target="content"> 菜单列表</a></li>
-                                <li><a href="{url:member/Menu/addMenu}" target="content">菜单添加</a></li>
-                                <li><a href="{url:member/Menu/menuRoleList}" target="content">菜单角色列表</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a target="content">修改手机号</a>
+                        <li><a target="content">预约店铺管理</a>
                             <ul>
-                                <li><a href="{url:member/member/applyTelList}" target="content" >待审核</a></li>
-                                <li><a href="{url:member/member/resetTelList}" target="content" >修改手机号</a></li>
-                                <li><a href="{url:member/member/checkTelList}" target="content" >已审核</a></li>
+                                <li><a href="{url:dy/dy/dyList}" target="content">店铺列表</a></li>
+                                <li><a href="{url:dy/dy/dyyy}" target="content">预约列表</a></li>
                             </ul>
                         </li>
-                        <!--<li><a href="shop-list.html" target="content">商铺管理</a></li>-->
-                       <!-- <li><a href="business-list.html" target="content">业务撮合人员列表</a></li>-->
+                            <li><a target="content">设计师管理</a>
+                                <ul>
+                                    <li><a href="{url:designer/designer/designerlist}" target="content">设计师列表</a></li>
+                                    <li><a href="{url:designer/designer/designeryy}" target="content">预约列表</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{url:tool/slide/slideList}" target="content">幻灯片管理</a>
+                                <ul>
+                                    <li><a href="{url:tool/slide/addSlide}" target="content">新增幻灯片</a></li>
+                                    <li><a href="{url:tool/slide/slideList}" target="content">幻灯片列表</a></li>
+                                </ul>
+                            </li>
                     </ul>
                 </li>
                 <li><a   target="content"><img src="{views:img/icons/menu/comment.png}" alt="" /> 资讯管理</a>
@@ -144,55 +133,9 @@
                                 <!-- <li><a href="{url:tool/advert/adManageList}" target="content">广告列表</a></li> -->
                             </ul>
                         </li>
-                        <li><a target="content">帮助管理</a>
-                            <ul>
-                                <li><a href="{url:tool/help/helpCatList}" target="content">帮助分类</a></li>
-                                <li><a href="{url:tool/help/helpList}" target="content">帮助列表</a></li>
-                            </ul>
-                        </li>
-                            <li><a href="{url:tool/friendlyLink/frdLinkList}" target="content">友情链接管理</a>
-                                <ul>
-                                    <li><a href="{url:tool/friendlyLink/addFrdLink}" target="content">新增友情链接</a></li>
-                                    <li><a href="{url:tool/friendlyLink/frdLinkList}" target="content">友情链接列表</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="{url:tool/slide/slideList}" target="content">幻灯片管理</a>
-                                <ul>
-                                    <li><a href="{url:tool/slide/addSlide}" target="content">新增幻灯片</a></li>
-                                    <li><a href="{url:tool/slide/slideList}" target="content">幻灯片列表</a></li>
-                                </ul>
-                            </li>
+                        
                     </ul>
                 </li>
-                <li><a   target="content"><img src="{views:img/icons/menu/comment.png}" alt="" /> 工具管理</a>
-                    <ul>
-                        <li><a  target="content">广告管理</a>
-                            <ul>
-                                <li><a target="content" href="{url:tool/advert/adPositionList}">广告位列表</a></li>
-                                <li><a href="{url:tool/advert/adManageList}" target="content">广告列表</a></li>
-                            </ul>
-                        </li>
-                        <li><a target="content">帮助管理</a>
-                            <ul>
-                                <li><a href="{url:tool/help/helpCatList}" target="content">帮助分类</a></li>
-                                <li><a href="{url:tool/help/helpList}" target="content">帮助列表</a></li>
-                            </ul>
-                        </li>
-                            <li><a href="{url:tool/friendlyLink/frdLinkList}" target="content">友情链接管理</a>
-                                <ul>
-                                    <li><a href="{url:tool/friendlyLink/addFrdLink}" target="content">新增友情链接</a></li>
-                                    <li><a href="{url:tool/friendlyLink/frdLinkList}" target="content">友情链接列表</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="{url:tool/slide/slideList}" target="content">幻灯片管理</a>
-                                <ul>
-                                    <li><a href="{url:tool/slide/addSlide}" target="content">新增幻灯片</a></li>
-                                    <li><a href="{url:tool/slide/slideList}" target="content">幻灯片列表</a></li>
-                                </ul>
-                            </li>
-                    </ul>
-                </li>
-
 
             </ul>
 

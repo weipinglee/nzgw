@@ -19,7 +19,7 @@ class SamplePlugin extends Yaf\Plugin_Abstract {
 	public function routerShutdown(Yaf\Request_Abstract $request, Yaf\Response_Abstract $response) {
 		//RBAC权限控制
 		$user_info = session::get(tool::getConfig(array('rbac','user_session')));
-
+		// var_dump($user_info);exit;
 		if((!isset($user_info) || !$user_info) && (strtolower($request->controller) != 'login')){
 			echo '<script type="text/javascript" >window.parent.location.href="'.url::createUrl("/login/login").'"</script>';
 			exit;
@@ -42,16 +42,6 @@ class SamplePlugin extends Yaf\Plugin_Abstract {
 		// 	rbac::accessMenu();
 		// }
 
-		//开闭市控制
-		$market = new \nainai\market();
-		$res = $market->checkCanOper($request);
-
-		if(!$res){
-			if(IS_AJAX || IS_POST){
-				die(\Library\json::encode(\Library\tool::getSuccInfo(0,'现在已闭市，无法操作')));
-			}
-
-		}
 		
 	}
 
